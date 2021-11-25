@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container flex-container">
+    <div  class="main-box">
+        <div class="input-box">
+            <input readonly type="number" class="num" id="result">
+            <br><br>
+            <input type="number" class="num" id="num1">
+            <span class="operator">  </span>
+            <input type="number" class="num" id="num2">
+
+        </div>
+
+        <br>
+        <div class="button-box">
+            <button disabled type="button" class="sum dis">+</button>
+            <button disabled type="button" class="minus dis">-</button>
+            <button disabled type="button" class="multiply dis">*</button>
+            <button disabled type="button" class="divide dis">/</button>
+        </div>
+        <br>
+        <div class="extra-button">
+            <button disabled type="button" class="degree dis">Degree</button>
+            <button type="button" class="square dis">&radic;</button>
+        </div>
+        <br>
+        <div>
+            <input type="text" class="max-min">
+<!--            <span></span>-->
+<!--            <input readonly type="number" class="result-min-max">-->
+        </div>
+        <br>
+        <div>
+            <button type="button" class="min dis">min</button>
+            <button type="button" class="max dis">max</button>
+
+        </div>
+    </div>
+    <div hidden class="result-box">
+        <ul class="result-box-ul"></ul>
+    </div>
+    <div class="buttons">
+        <button  type="button" class="delete-button">Delete All</button>
+        <button  type="button" class="history-button">History board</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
